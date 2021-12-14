@@ -6,7 +6,6 @@ import Login from './pages/Login';
 function App() {
   return (
     <div>
-      <h2>Hello, TrybeWallet!</h2>
       <Switch>
         <Route path="/carteira" component={ Wallet } />
         <Route exact path="/" component={ Login } />

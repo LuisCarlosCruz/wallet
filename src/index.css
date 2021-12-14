@@ -1,26 +1,81 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
-  color: bisque;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (min-width: 768px) {
+  .tabelaTH {
+    border: 1px solid;
+    padding: 5px;
+  }
+  
+  .tabelaTD {
+    border: 1px solid;
+    padding: 5px;
+  }
+  
+  
+  .title-login-page {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 3rem;
+    margin-top: 2.5rem;
+  }
+  
+  .div-page-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+  }
+  
+  .img-page-login {
+    width: 60vh;
+  }
 }
 
-.tabelaTH {
-  border: 1px solid bisque;
-  padding: 5px;
-  color: greenyellow;
-}
+@media only screen and (max-width: 768px) {
+  .title-login-page {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-size: 2rem;
+    margin-top: 2.5rem;
+  }
 
-.tabelaTD {
-  border: 1px solid bisque;
-  padding: 5px;
+  .div-page-login {
+    font-family: 'Open Sans';
+  }
+  
+  .img-page-login {
+    display: block;
+    text-align: center;
+  }
+
+  .form-input-login-page {
+    display: block;
+    text-align: center;
+  }
+
+  .input-password-login-page {
+    margin: 1rem 0  2rem 0;
+  }
+  
+  .btn-success {
+    width: 13rem;
+  }
+
+  .tabelaTH {
+    border: 1px solid;
+    padding: 5px;
+  }
+  
+  .tabelaTD {
+    border: 1px solid;
+    padding: 5px;
+  }
+  
+  
+  
 }
