@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fazerLogin } from '../actions/index';
+import walletImg from '../images/walletImg.svg';
 
 class Login extends React.Component {
   constructor(props) {
@@ -44,40 +45,46 @@ class Login extends React.Component {
     const { email, btn } = this.state;
     return (
       <div>
-        <br />
-        <h4>Fazer Login</h4>
-        <form>
-          <label htmlFor="email">
-            User:
-            <input
-              data-testid="email-input"
-              type="email"
-              id="email"
-              name="email"
-              value={ email }
-              onChange={ this.handleChange }
-            />
-          </label>
-          <br />
-          <label htmlFor="password">
-            Password:
-            <input
-              data-testid="password-input"
-              type="password"
-              id="password"
-              name="password"
-              onChange={ this.handleChange }
-            />
-          </label>
-          <br />
-          <button
-            type="submit"
-            disabled={ btn }
-            onClick={ this.onSubmitForm }
-          >
-            Entrar
-          </button>
-        </form>
+        <p className="title-login-page">Welcome to your wallet</p>
+        <div className="div-page-login">
+          <div className="img-page-login">
+            <img src={ walletImg } alt="logo wallet" />
+          </div>
+          <form className="form-input-login-page">
+            <label htmlFor="email" className="form-label">
+              <input
+                data-testid="email-input"
+                type="email"
+                id="email"
+                name="email"
+                value={ email }
+                onChange={ this.handleChange }
+                placeholder="User"
+                isrequired
+              />
+            </label>
+            <br />
+            <label htmlFor="password" className="input-password-login-page">
+              <input
+                data-testid="password-input"
+                type="password"
+                id="password"
+                name="password"
+                onChange={ this.handleChange }
+                placeholder="Password:"
+              />
+            </label>
+            <br />
+            <button
+              type="submit"
+              disabled={ btn }
+              onClick={ this.onSubmitForm }
+              className="btn btn-success"
+            >
+              Login
+            </button>
+          </form>
+        </div>
       </div>
     );
   }
@@ -92,7 +99,6 @@ Login.propTypes = {
 
 const mapDispatchToProps = (dispatch) => ({
   dispatchValue: (stateComponent) => dispatch(fazerLogin(stateComponent)),
-}
-);
+});
 
 export default connect(null, mapDispatchToProps)(Login);
