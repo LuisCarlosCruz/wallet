@@ -20,37 +20,37 @@ class TableExpenses extends React.Component {
   render() {
     const { propArrayDespesas } = this.props;
     return (
-      <div>
-        <h3>Tabela de Desepesa</h3>
-        <table>
-          <thead>
+      <div className="div-tabela-despesas">
+        <h3>Tabela de Desepesas</h3>
+        <table className="table table-striped">
+          <thead className="thead-light">
             <TableExpenses2 />
           </thead>
           { propArrayDespesas.map((item) => (
             <tr key={ item.id }>
-              <td className="tabelaTD">{ item.description }</td>
-              <td className="tabelaTD">{ item.tag }</td>
-              <td className="tabelaTD">{ item.method }</td>
-              <td className="tabelaTD">{ item.value }</td>
-              <td className="tabelaTD">
+              <td>{ item.description }</td>
+              <td>{ item.tag }</td>
+              <td>{ item.method }</td>
+              <td>{ item.value }</td>
+              <td>
                 {
                   item.exchangeRates[item.currency]
                     .name === /Dólar Americano/i ? 'Dólar Comercial'
                     : item.exchangeRates[item.currency].name.split('/', 1)
                 }
               </td>
-              <td className="tabelaTD">
+              <td>
                 {
                   Number(item.exchangeRates[item.currency].ask).toFixed(2)
                 }
               </td>
-              <td className="tabelaTD">
+              <td>
                 {
                   Number(item.exchangeRates[item.currency].ask * item.value).toFixed(2)
                 }
               </td>
-              <td className="tabelaTD"> Real </td>
-              <td className="tabelaTD">
+              <td> Real </td>
+              <td>
                 <button
                   type="button"
                   onClick={ () => this.HandleOnClick(item.id) }

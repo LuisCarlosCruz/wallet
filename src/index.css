@@ -48,15 +48,21 @@
     font-family: 'Open Sans';
     font-size: 2rem;
     margin-top: 2.5rem;
+    animation-name: welcome;
+    animation-duration: 1.3s;
   }
 
   .div-page-login {
     font-family: 'Open Sans';
+    animation-name: welcome;
+    animation-duration: 1.3s;
   }
   
   .img-page-login {
     display: block;
     text-align: center;
+    animation-name: welcome;
+    animation-duration: 1.3s;
   }
 
   .form-input-login-page {
@@ -172,7 +178,17 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.div-tabela-despesas {
+  margin: 15px;
+}
+
+.cabecalho-tabela{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 

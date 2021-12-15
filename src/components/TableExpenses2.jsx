@@ -9,15 +9,15 @@ class TableExpenses2 extends React.Component {
   render() {
     return (
       <tr>
-        <th className="tabelaTH"> Descrição </th>
-        <th className="tabelaTH"> Tag </th>
-        <th className="tabelaTH"> Método de pagamento </th>
-        <th className="tabelaTH"> Valor </th>
-        <th className="tabelaTH"> Moeda </th>
-        <th className="tabelaTH"> Câmbio utilizado </th>
-        <th className="tabelaTH"> Valor convertido </th>
-        <th className="tabelaTH"> Moeda de conversão </th>
-        <th className="tabelaTH"> Editar/Excluir </th>
+        <th> Descrição </th>
+        <th> Tag </th>
+        <th> Pagamento </th>
+        <th> Valor </th>
+        <th> Moeda </th>
+        <th> Câmbio utilizado </th>
+        <th> Valor Convertido </th>
+        <th> Moeda de Conversão </th>
+        <th> Excluir </th>
       </tr>
     );
   }
