@@ -17,22 +17,34 @@ class Header extends React.Component {
       total.push(objExchangeRates[desp.currency].ask * desp.value);
     });
     const totalDespesa = total.reduce((acc, value) => acc + value, 0);
-    return `Total de Despesas RS: ${totalDespesa.toFixed(2)}`;
+    return `${totalDespesa.toFixed(2)}`;
   }
 
   render() {
     const { userEmail } = this.props;
     return (
       <header>
-        <div data-testid="email-field">
-          Welcome
-          {userEmail}
+        <div data-testid="email-field" className="div-user-wallet-page">
+          <h5 className="welcome-user-wallet-page">P</h5>
+          <h5>essoa</h5>
+          <h5 className="welcome-user-wallet-page">U</h5>
+          <h5>suária:</h5>
+          <h5 className="name-user-wallet-page">
+            {/* {userEmail} */}
+            luis
+          </h5>
         </div>
-        <div data-testid="total-field">
-          { this.handleTotalDespesas() }
+
+        <div data-testid="total-field" className="div-total-despesa-wallet-page">
+          Total de despesas
+          <span className="span-total-despesa-wallet-page">
+            R$:
+            { this.handleTotalDespesas() }
+          </span>
         </div>
+
         <div data-testid="header-currency-field">
-          BRL
+          Moeda de conversão BRL
         </div>
       </header>
     );

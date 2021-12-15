@@ -21,6 +21,8 @@
     font-family: 'Open Sans';
     font-size: 3rem;
     margin-top: 2.5rem;
+    animation-name: welcome;
+    animation-duration: 1.8s;
   }
   
   .div-page-login {
@@ -28,10 +30,14 @@
     align-items: center;
     justify-content: center;
     font-family: 'Open Sans';
+    animation-name: welcome;
+    animation-duration: 1.5s;
   }
   
   .img-page-login {
     width: 60vh;
+    animation-name: welcome;
+    animation-duration: 1.5s;
   }
 }
 
@@ -75,7 +81,52 @@
     border: 1px solid;
     padding: 5px;
   }
-  
-  
-  
 }
+
+/* add ao media */
+
+.div-user-wallet-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0 20px 0px;
+  animation-name: welcome;
+  animation-duration: 1.8s;
+}
+
+@keyframes welcome {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.welcome-user-wallet-page {
+  color: green;
+  margin-left: 10px;
+}
+
+.name-user-wallet-page {
+  color: green;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.div-total-despesa-wallet-page {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.span-total-despesa-wallet-page {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 8px;
+  color: rgb(224, 79, 79);
+}
+
