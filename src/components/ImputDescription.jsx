@@ -12,13 +12,15 @@ class ImputDescription extends React.Component {
     return (
       <div>
         <label htmlFor="descricao">
-          Descrição :
+          <span className="text-inputs-wallet-page">Descrição</span>
           <input
             type="text"
             id="descricao"
             name="description"
             value={ description }
             onChange={ (e) => func(e) }
+            className="input-group-text"
+            // placeholder="Descrição"
           />
         </label>
       </div>

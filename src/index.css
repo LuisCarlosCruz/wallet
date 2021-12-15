@@ -85,6 +85,13 @@
 
 /* add ao media */
 
+.wallet-page {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  /* letter-spacing: 0.1em; */
+  letter-spacing: 1px;
+}
+
 .div-user-wallet-page {
   display: flex;
   justify-content: flex-start;
@@ -92,6 +99,7 @@
   margin: 20px 0 20px 0px;
   animation-name: welcome;
   animation-duration: 1.8s;
+  font-size: 1.5rem;
 }
 
 @keyframes welcome {
@@ -105,13 +113,14 @@
   }
 }
 
-.welcome-user-wallet-page {
-  color: green;
+.pessoa-usuaria-wallet-page {
+  color: rgb(0, 197, 0);
   margin-left: 10px;
+  font-weight: 700;
 }
 
 .name-user-wallet-page {
-  color: green;
+  color: rgb(0, 197, 0);
   margin-left: 8px;
   font-weight: 600;
 }
@@ -121,12 +130,49 @@
   justify-content: flex-end;
   align-items: center;
   margin-right: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.span-total-despesa-wallet-page {
+.despesa-vermelha {
   font-size: 1.5rem;
   font-weight: 600;
   margin-left: 8px;
   color: rgb(224, 79, 79);
 }
+
+.despesa-verde {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 8px;
+  color: rgb(0, 197, 0);
+}
+
+.moeda-conversao-wallet-page {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(0, 197, 0);
+  margin: 5px ;
+}
+
+.text-inputs-wallet-page {
+  font-size: 1rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.form-wallet-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.btn-wallet-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
 

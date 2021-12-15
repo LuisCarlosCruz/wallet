@@ -25,11 +25,11 @@ class Header extends React.Component {
     return (
       <header>
         <div data-testid="email-field" className="div-user-wallet-page">
-          <h5 className="welcome-user-wallet-page">P</h5>
+          <h5 className="pessoa-usuaria-wallet-page">P</h5>
           <h5>essoa</h5>
-          <h5 className="welcome-user-wallet-page">U</h5>
+          <h5 className="pessoa-usuaria-wallet-page">U</h5>
           <h5>suária:</h5>
-          <h5 className="name-user-wallet-page">
+          <h5 className="pessoa-usuaria-wallet-page">
             {/* {userEmail} */}
             luis
           </h5>
@@ -37,14 +37,21 @@ class Header extends React.Component {
 
         <div data-testid="total-field" className="div-total-despesa-wallet-page">
           Total de despesas
-          <span className="span-total-despesa-wallet-page">
+          <span
+            className={ this.handleTotalDespesas() === '0.00'
+              ? 'despesa-verde' : 'despesa-vermelha' }
+          >
             R$:
             { this.handleTotalDespesas() }
           </span>
         </div>
 
-        <div data-testid="header-currency-field">
-          Moeda de conversão BRL
+        <div
+          data-testid="header-currency-field"
+          className="div-total-despesa-wallet-page"
+        >
+          <span>Moeda de conversão</span>
+          <span className="moeda-conversao-wallet-page">BRL</span>
         </div>
       </header>
     );

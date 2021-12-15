@@ -12,8 +12,9 @@ class ImputTag extends React.Component {
     return (
       <div>
         <label htmlFor="tag">
-          Tag :
+          <span className="text-inputs-wallet-page">Tag</span>
           <select
+            className="input-group-text"
             name="tag"
             id="tag"
             value={ tag }
