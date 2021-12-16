@@ -19,9 +19,15 @@ class Login extends React.Component {
 
   onSubmitForm() {
     const { history, dispatchValue } = this.props;
-    const { email } = this.state;
-    dispatchValue(email);
-    history.push('/carteira');
+    const { email, password } = this.state;
+    const emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    const min = 5;
+    if (email.match(emailRegex) && password.length > min) {
+      dispatchValue(email);
+      history.push('/carteira');
+    } else {
+      alert('Insira os dados corretamente !');
+    }
   }
 
   handleChange({ target }) {
@@ -60,7 +66,7 @@ class Login extends React.Component {
                 value={ email }
                 onChange={ this.handleChange }
                 placeholder="User"
-                isrequired
+                required
               />
             </label>
             <br />
@@ -71,7 +77,9 @@ class Login extends React.Component {
                 id="password"
                 name="password"
                 onChange={ this.handleChange }
-                placeholder="Password:"
+                placeholder="Password"
+                maxLength="6"
+                required
               />
             </label>
             <br />
