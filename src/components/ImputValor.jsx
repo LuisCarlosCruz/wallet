@@ -12,13 +12,15 @@ class ImputValor extends React.Component {
     return (
       <div>
         <label htmlFor="valor">
-          Valor:
+          <span className="text-inputs-wallet-page">Valor</span>
           <input
             type="number"
             id="valor"
             name="value"
             value={ value }
             onChange={ (e) => func(e) }
+            className="input-group-text"
+            // placeholder="Valor"
           />
         </label>
       </div>

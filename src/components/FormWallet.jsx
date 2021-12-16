@@ -5,6 +5,7 @@ import { actionFunctionThunk2 } from '../actions';
 import ImputValor from './ImputValor';
 import ImputDescription from './ImputDescription';
 import ImputTag from './ImputTag';
+import ButtonDespesas from './ButtonDespesas';
 
 class FormWallet extends React.Component {
   constructor(props) {
@@ -43,30 +44,30 @@ class FormWallet extends React.Component {
     const { valor, description, moeda, method: metodoPag, tag } = this.state;
     return (
       <div>
-        <form>
+        <form className="form-wallet-page">
           <ImputValor value={ valor } func={ this.handleOnChange } />
           <ImputDescription description={ description } func={ this.handleOnChange } />
           <label htmlFor="selectMoeda">
-            Moeda
+            <span className="text-inputs-wallet-page">Moeda</span>
             <select
+              className="input-group-text"
               name="currency"
               id="selectMoeda"
               value={ moeda }
               onChange={ this.handleOnChange }
             >
-              {
-                respostaAPI ? respostaAPI
-                  .map((i) => (
-                    i[0] !== 'USDT' ? (
-                      <option key={ i[0] }>
-                        { i[0] }
-                      </option>) : '')) : ''
-              }
+              { respostaAPI ? respostaAPI
+                .map((i) => (
+                  i[0] !== 'USDT' ? (
+                    <option key={ i[0] }>
+                      { i[0] }
+                    </option>) : '')) : ''}
             </select>
           </label>
           <label htmlFor="selectMetodo">
-            Método de Pagamento
+            <span className="text-inputs-wallet-page">Pagamento</span>
             <select
+              className="input-group-text"
               name="method"
               id="selectMetodo"
               value={ metodoPag }
@@ -79,9 +80,10 @@ class FormWallet extends React.Component {
           </label>
           <ImputTag tag={ tag } func={ this.handleOnChange } />
         </form>
-        <button type="button" onClick={ () => this.handleOnClick() }>
+        <ButtonDespesas func={ this.handleOnClick } />
+        {/* <button type="button" onClick={ () => this.handleOnClick() }>
           Adicionar Despesa
-        </button>
+        </button> */}
       </div>
     );
   }

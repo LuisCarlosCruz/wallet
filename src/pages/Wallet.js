@@ -20,7 +20,7 @@ class Wallet extends React.Component {
   render() {
     const { respostaAPI } = this.props;
     return (
-      <div>
+      <div className="wallet-page">
         <Header />
         <FormWallet respostaAPI={ respostaAPI } />
         <TableExpenses />
