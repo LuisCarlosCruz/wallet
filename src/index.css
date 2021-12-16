@@ -94,7 +94,6 @@
 .wallet-page {
   font-family: 'Open Sans';
   font-weight: 600;
-  /* letter-spacing: 0.1em; */
   letter-spacing: 1px;
 }
 
@@ -161,6 +160,17 @@
   margin: 5px ;
 }
 
+.div-img-currency {
+  display: flex;
+  justify-content: center;
+  height: 220px;
+}
+
+.div-img-despesas-moeda {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .text-inputs-wallet-page {
   font-size: 1rem;
   margin-right: 5px;
@@ -171,24 +181,27 @@
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  margin-top: 30px;
 }
 
 .btn-wallet-page {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .div-tabela-despesas {
-  margin: 15px;
+  margin: 35px 15px 0 15px;
 }
 
-.cabecalho-tabela{
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
+.title-tabela-despesas {
+  margin-bottom: 20px;
 }
+
+.table-bordered {
+  text-align: center;
+}
+
+
 
 

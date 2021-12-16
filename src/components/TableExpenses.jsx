@@ -21,8 +21,8 @@ class TableExpenses extends React.Component {
     const { propArrayDespesas } = this.props;
     return (
       <div className="div-tabela-despesas">
-        <h3>Tabela de Desepesas</h3>
-        <table className="table table-striped">
+        <h3 className="title-tabela-despesas">Tabela de Desepesas</h3>
+        <table className="table table-bordered">
           <thead className="thead-light">
             <TableExpenses2 />
           </thead>
@@ -55,8 +55,9 @@ class TableExpenses extends React.Component {
                   type="button"
                   onClick={ () => this.HandleOnClick(item.id) }
                   data-testid="delete-btn"
+                  className="btn btn-outline-danger btn-exclui-despesa"
                 >
-                  X
+                  🗑
                 </button>
               </td>
             </tr>

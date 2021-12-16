@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import currency from '../images/currency.png';
 
 class Header extends React.Component {
   constructor(props) {
@@ -30,28 +31,33 @@ class Header extends React.Component {
           <h5 className="pessoa-usuaria-wallet-page">U</h5>
           <h5>suária:</h5>
           <h5 className="pessoa-usuaria-wallet-page">
-            {/* {userEmail} */}
-            luis
+            {userEmail}
           </h5>
         </div>
+        <div className="div-img-despesas-moeda">
+          <div className="div-img-currency">
+            <img src={ currency } alt="imagecurrency" className="img-currency" />
+          </div>
+          <div className="div-despesas-moeda">
+            <div data-testid="total-field" className="div-total-despesa-wallet-page">
+              Total de despesas
+              <span
+                className={ this.handleTotalDespesas() === '0.00'
+                  ? 'despesa-verde' : 'despesa-vermelha' }
+              >
+                R$:
+                { this.handleTotalDespesas() }
+              </span>
+            </div>
 
-        <div data-testid="total-field" className="div-total-despesa-wallet-page">
-          Total de despesas
-          <span
-            className={ this.handleTotalDespesas() === '0.00'
-              ? 'despesa-verde' : 'despesa-vermelha' }
-          >
-            R$:
-            { this.handleTotalDespesas() }
-          </span>
-        </div>
-
-        <div
-          data-testid="header-currency-field"
-          className="div-total-despesa-wallet-page"
-        >
-          <span>Moeda de conversão</span>
-          <span className="moeda-conversao-wallet-page">BRL</span>
+            <div
+              data-testid="header-currency-field"
+              className="div-total-despesa-wallet-page"
+            >
+              <span>Moeda de conversão</span>
+              <span className="moeda-conversao-wallet-page">BRL</span>
+            </div>
+          </div>
         </div>
       </header>
     );
