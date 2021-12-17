@@ -25,13 +25,14 @@ class Header extends React.Component {
     const { userEmail } = this.props;
     return (
       <header>
-        <div data-testid="email-field" className="div-user-wallet-page">
-          <h5 className="pessoa-usuaria-wallet-page">P</h5>
-          <h5>essoa</h5>
-          <h5 className="pessoa-usuaria-wallet-page">U</h5>
-          <h5>suária:</h5>
-          <h5 className="pessoa-usuaria-wallet-page">
+        <div className="div-user-wallet-page">
+          <h5 className="pessoa-usuaria-green-wallet-page">P</h5>
+          <h5 className="pessoa-usuaria-wallet-page">essoa</h5>
+          <h5 className="pessoa-usuaria-green-wallet-page">U</h5>
+          <h5 className="pessoa-usuaria-wallet-page">suária:</h5>
+          <h5 className="pessoa-usuaria-green-wallet-page">
             {userEmail}
+            luiscarlos
           </h5>
         </div>
         <div className="div-img-despesas-moeda">
@@ -39,7 +40,7 @@ class Header extends React.Component {
             <img src={ currency } alt="imagecurrency" className="img-currency" />
           </div>
           <div className="div-despesas-moeda">
-            <div data-testid="total-field" className="div-total-despesa-wallet-page">
+            <div className="div-total-despesa-wallet-page">
               Total de despesas
               <span
                 className={ this.handleTotalDespesas() === '0.00'

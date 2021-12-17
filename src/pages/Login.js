@@ -50,11 +50,11 @@ class Login extends React.Component {
   render() {
     const { email, btn } = this.state;
     return (
-      <div>
+      <div className="login-page">
         <p className="title-login-page">Welcome to your wallet</p>
         <div className="div-page-login">
-          <div className="img-page-login">
-            <img src={ walletImg } alt="logo wallet" />
+          <div className="div-img-page-login">
+            <img className="img-page-login" src={ walletImg } alt="logo wallet" />
           </div>
           <form className="form-input-login-page">
             <label htmlFor="email" className="form-label">
