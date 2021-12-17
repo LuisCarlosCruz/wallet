@@ -21,7 +21,7 @@ class TableExpenses extends React.Component {
     const { propArrayDespesas } = this.props;
     return (
       <div className="div-tabela-despesas">
-        <h3 className="title-tabela-despesas">Tabela de Desepesas</h3>
+        <h3 className="title-tabela-despesas">Tabela de Despesas</h3>
         <table className="table table-bordered">
           <thead className="thead-light">
             <TableExpenses2 />
