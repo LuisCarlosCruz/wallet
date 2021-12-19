@@ -69,7 +69,6 @@ class Login extends React.Component {
                 required
               />
             </label>
-            <br />
             <label htmlFor="password" className="input-password-login-page">
               <input
                 data-testid="password-input"
