@@ -11,20 +11,20 @@ class ImputTag extends React.Component {
     const { tag, func } = this.props;
     return (
       <div>
-        <label htmlFor="tag">
+        <label htmlFor="tag" className="label-select-currency">
           <span className="text-inputs-wallet-page">Tag</span>
           <select
-            className="input-group-text"
+            className="input-group-text inputs-select-wallet"
             name="tag"
             id="tag"
             value={ tag }
             onChange={ (e) => func(e) }
           >
-            <option value="Alimentacao">Alimentação</option>
-            <option value="Lazer">Lazer</option>
-            <option value="Trabalho">Trabalho</option>
-            <option value="Transporte">Transporte</option>
-            <option value="Saude">Saúde</option>
+            <option className="option-currency" value="Alimentacao">Alimentação</option>
+            <option className="option-currency" value="Lazer">Lazer</option>
+            <option className="option-currency" value="Trabalho">Trabalho</option>
+            <option className="option-currency" value="Transporte">Transporte</option>
+            <option className="option-currency" value="Saude">Saúde</option>
           </select>
         </label>
       </div>

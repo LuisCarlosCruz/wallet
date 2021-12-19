@@ -19,7 +19,7 @@ class ImputDescription extends React.Component {
             name="description"
             value={ description }
             onChange={ (e) => func(e) }
-            className="input-group-text"
+            className="input-group-text inputs-wallet"
             // placeholder="Descrição"
           />
         </label>

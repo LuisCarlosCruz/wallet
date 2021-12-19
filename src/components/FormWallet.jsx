@@ -47,10 +47,10 @@ class FormWallet extends React.Component {
         <form className="form-wallet-page">
           <ImputValor value={ valor } func={ this.handleOnChange } />
           <ImputDescription description={ description } func={ this.handleOnChange } />
-          <label htmlFor="selectMoeda">
+          <label htmlFor="selectMoeda" className="label-select-currency">
             <span className="text-inputs-wallet-page">Moeda</span>
             <select
-              className="input-group-text"
+              className="input-group-text inputs-select-wallet"
               name="currency"
               id="selectMoeda"
               value={ moeda }
@@ -59,23 +59,23 @@ class FormWallet extends React.Component {
               { respostaAPI ? respostaAPI
                 .map((i) => (
                   i[0] !== 'USDT' ? (
-                    <option key={ i[0] }>
+                    <option className="option-currency" key={ i[0] }>
                       { i[0] }
                     </option>) : '')) : ''}
             </select>
           </label>
-          <label htmlFor="selectMetodo">
+          <label htmlFor="selectMetodo" className="label-select-currency">
             <span className="text-inputs-wallet-page">Pagamento</span>
             <select
-              className="input-group-text"
+              className="input-group-text inputs-select-wallet"
               name="method"
               id="selectMetodo"
               value={ metodoPag }
               onChange={ this.handleOnChange }
             >
-              <option value="Dinheiro" selected>Dinheiro</option>
-              <option value="Cartão de crédito" selected>Cartão de crédito</option>
-              <option value="Cartão de débito" selected>Cartão de débito</option>
+              <option value="Dinheiro" className="option-currency" selected>Dinheiro</option>
+              <option value="Cartão de crédito" className="option-currency" selected>Cartão de crédito</option>
+              <option value="Cartão de débito" className="option-currency" selected>Cartão de débito</option>
             </select>
           </label>
           <ImputTag tag={ tag } func={ this.handleOnChange } />

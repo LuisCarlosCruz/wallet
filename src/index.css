@@ -133,6 +133,14 @@
 /* ============= MOBILE ============= */
 @media only screen and (max-width: 768px) {
   
+ /*  html {
+    width: 100vh;
+  } */
+
+  /* body {
+    width: 100vh;
+  } */
+
   .title-login-page {
     font-family: 'Open Sans';
     font-size: 1.6rem;
@@ -190,39 +198,94 @@
     color: rgb(0, 197, 0);
     margin-left: 10px;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-
+  
   .pessoa-usuaria-wallet-page {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .div-img-despesas-moeda {
     display: flex;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    width: 100vh;
-  }
-
-  .div-img-currency {
-    width: 40%;
-  }
-
-  .div-img-currency img {
-    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .div-despesas-moeda {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .despesa-vermelha {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 8px;
+    color: rgb(224, 79, 79);
+  }
+  
+  .despesa-verde {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 8px;
+    color: rgb(0, 197, 0);
+  }
+  
+  .div-despesas-moeda {
+    margin-bottom: 2rem;
   }
 
   .div-total-despesa-wallet-page {
-    width: 100%;
-    height: 50%;
-    text-align: center;
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
+  
+  .moeda-conversao-wallet-page {
+    color: rgb(0, 197, 0);
+    margin-left: 8px;
+    font-size: 2.2rem;
+  }
+  
+  .form-wallet-page {
+    font-size: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .inputs-wallet {
+    height: 59px;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .inputs-select-wallet {
+    width: 533px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .option-currency {
+    font-size: 1rem;
+  }
+  
+  .label-select-currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-wallet-page {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-wallet-page button {
+    width: 533px;
+    font-size: 2rem;
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+  
 }
 
 @keyframes welcome {
