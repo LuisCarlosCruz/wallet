@@ -19,7 +19,7 @@ class ImputValor extends React.Component {
             name="value"
             value={ value }
             onChange={ (e) => func(e) }
-            className="input-group-text"
+            className="input-group-text inputs-wallet"
             // placeholder="Valor"
           />
         </label>

@@ -32,6 +32,7 @@ class Header extends React.Component {
           <h5 className="pessoa-usuaria-wallet-page">suária:</h5>
           <h5 className="pessoa-usuaria-green-wallet-page">
             {userEmail}
+            luiscarlosferreira
           </h5>
         </div>
         <div className="div-img-despesas-moeda">
