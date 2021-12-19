@@ -26,13 +26,9 @@ class Header extends React.Component {
     return (
       <header>
         <div className="div-user-wallet-page">
-          {/* <h5 className="pessoa-usuaria-green-wallet-page">P</h5>
-          <h5 className="pessoa-usuaria-wallet-page">essoa</h5>
-          <h5 className="pessoa-usuaria-green-wallet-page">U</h5> */}
           <h5 className="pessoa-usuaria-wallet-page">Usuário:</h5>
           <h5 className="pessoa-usuaria-green-wallet-page">
             {userEmail}
-            luiscarlosferreira
           </h5>
         </div>
         <div className="div-img-despesas-moeda">

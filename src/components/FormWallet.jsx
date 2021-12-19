@@ -81,9 +81,6 @@ class FormWallet extends React.Component {
           <ImputTag tag={ tag } func={ this.handleOnChange } />
         </form>
         <ButtonDespesas func={ this.handleOnClick } />
-        {/* <button type="button" onClick={ () => this.handleOnClick() }>
-          Adicionar Despesa
-        </button> */}
       </div>
     );
   }
