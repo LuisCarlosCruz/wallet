@@ -10,21 +10,17 @@ class ImputValor extends React.Component {
   render() {
     const { value, func } = this.props;
     return (
-      <div>
-        <label htmlFor="valor">
-          <span className="text-inputs-wallet-page">Valor</span>
-          <input
-            type="number"
-            id="valor"
-            name="value"
-            value={ value }
-            onChange={ (e) => func(e) }
-            className="input-group-text inputs-wallet"
-            // placeholder="Valor"
-          />
-        </label>
-      </div>
-
+      <label htmlFor="valor">
+        <span className="text-inputs-wallet-page">Valor</span>
+        <input
+          type="number"
+          id="valor"
+          name="value"
+          value={ value }
+          onChange={ (e) => func(e) }
+          className="input-group-text inputs-wallet"
+        />
+      </label>
     );
   }
 }

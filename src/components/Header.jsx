@@ -26,10 +26,10 @@ class Header extends React.Component {
     return (
       <header>
         <div className="div-user-wallet-page">
-          <h5 className="pessoa-usuaria-green-wallet-page">P</h5>
+          {/* <h5 className="pessoa-usuaria-green-wallet-page">P</h5>
           <h5 className="pessoa-usuaria-wallet-page">essoa</h5>
-          <h5 className="pessoa-usuaria-green-wallet-page">U</h5>
-          <h5 className="pessoa-usuaria-wallet-page">suária:</h5>
+          <h5 className="pessoa-usuaria-green-wallet-page">U</h5> */}
+          <h5 className="pessoa-usuaria-wallet-page">Usuário:</h5>
           <h5 className="pessoa-usuaria-green-wallet-page">
             {userEmail}
             luiscarlosferreira
@@ -37,7 +37,7 @@ class Header extends React.Component {
         </div>
         <div className="div-img-despesas-moeda">
           <div className="div-img-currency">
-            <img src={ currency } alt="imagecurrency" className="img-currency" />
+            <img src={ currency } alt="imagecurrency" className="img-wallet-page" />
           </div>
           <div className="div-despesas-moeda">
             <div className="div-total-despesa-wallet-page">
