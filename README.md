@@ -1,8 +1,8 @@
 # Projeto Wallet
 <!-- 
->  [Wallet](https://value-converter.netlify.app/) -->
+>   -->
 
-> ### Link Wallet aqui: <a href="https://value-converter.netlify.app/" target="_blank">WALLET</a>
+> #### Link aqui:  💲💲 [Wallet](https://value-converter.netlify.app/) 💲💲
 
 <br />
 
