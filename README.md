@@ -43,8 +43,17 @@
 
 
 ---
+> # Imagens do site
+
+<img src="https://github.com/LuisCarlosCruz/wallet/blob/main/src/gifs/gif-wallet.gif?raw=true" width="890" alt="gif-wallet-page"/>
+
+<img src="./src/images/print-login-page.png" width="890" alt="gif-wallet-page"/>
+
+<img src="./src/images/print-wallet-page.png" width="890" alt="gif-wallet-page"/>
 
 <br />
+
+---
 
 >## Caso queira contribuir:
 
@@ -68,11 +77,11 @@
 
 <br />
 
----
+<!-- ---
 > # Imagens do site
 
 <img src="https://github.com/LuisCarlosCruz/wallet/blob/main/src/gifs/gif-wallet.gif?raw=true" width="890" alt="gif-wallet-page"/>
 
 <img src="./src/images/print-login-page.png" width="890" alt="gif-wallet-page"/>
 
-<img src="./src/images/print-wallet-page.png" width="890" alt="gif-wallet-page"/>
+<img src="./src/images/print-wallet-page.png" width="890" alt="gif-wallet-page"/> -->
